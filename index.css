@@ -12,6 +12,8 @@
     --HoverEffects: --#FF4500;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 html,
 body {
     height: 100%;
@@ -20,6 +22,7 @@ body {
 body {
     /* background-color: #001721 */
     background-color: var(--PrimaryText);
+    font-family: "Montserrat", sans-serif;
 
 }
 

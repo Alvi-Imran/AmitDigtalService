@@ -329,8 +329,14 @@ nav {
 #why-marquee {
     width: 100%;
     height: auto;
-    display: flex;
+    margin: 0 auto;
     background-color: saddlebrown;
+}
+
+.why-cover{
+    margin: 30px auto;
+    display: flex;
+    /* justify-content: center; */
 }
 
 .why-box{
@@ -343,5 +349,11 @@ nav {
     transition: 0.3s;
     text-align: center;
     margin: 0 15px;
+}
+
+.why-box p{
+    white-space: normal;
+    margin-top: 20px;
+    color: var(--text-cl);
 }
 

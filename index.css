@@ -139,11 +139,12 @@ nav {
 }
 
 /* -- About-Us --- */
-.section:nth-child(3){
-    background-color: #fae8d2; 
+.section:nth-child(3) {
+    background-color: #fae8d2;
     height: auto;
     padding: 20px 0;
 }
+
 .about-us {
     width: 90%;
     height: auto;
@@ -210,13 +211,13 @@ nav {
 }
 
 /* -- service section -- */
-.section:nth-child(4){
-    background-color: #fae8d2; 
+.section:nth-child(4) {
+    background-color: #fae8d2;
     position: relative;
     height: auto;
 }
 
-.service-content{
+.service-content {
     width: 90%;
     height: auto;
     padding: 30px;
@@ -234,7 +235,7 @@ nav {
     font-size: 2.4rem;
 }
 
-.service-btn{
+.service-btn {
     padding: 5px;
     position: absolute;
     right: 5%;
@@ -243,30 +244,34 @@ nav {
     background-color: #FF6F61;
 }
 
-.service-btn button{
+.service-btn button {
     cursor: pointer;
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
 
-.service-btn button i{
+.service-btn button i {
     color: #1C1C1C;
     font-size: 1.5rem;
 }
 
 
-.service-cover{
+.service-cover {
     width: 90%;
     height: auto;
     margin: 70px auto;
-    overflow-x: auto;
-    padding: 20px 40px;
-    display: flex;
-    gap: 30px;
+    overflow-x: hidden;
 }
 
-.service-box{
+.service-cover-sl {
+    padding: 20px 0px;
+    display: flex;
+    gap: 30px;
+    transition: transform 0.5s ;
+}
+
+.service-box {
     flex-shrink: 0;
     width: 300px;
     height: auto;
@@ -276,14 +281,14 @@ nav {
     box-shadow: 0 4px 10px #b1afaf;
     transition: 0.3s;
     text-align: center;
-    
+
 }
 
-.service-box h3{
+.service-box h3 {
     color: var(--Accent1);
 }
 
-.service-box p{
+.service-box p {
     margin-top: 15px;
     color: var(--text-cl);
     font-size: 1rem;
@@ -291,13 +296,13 @@ nav {
 }
 
 /* -- why-section -- */
-.section:nth-child(5){
-    background-color: #fae8d2; 
+.section:nth-child(5) {
+    background-color: #fae8d2;
     height: auto;
     padding: 20px 0;
 }
 
-.why-container{
+.why-container {
     width: 90%;
     height: auto;
     padding: 30px;
@@ -321,7 +326,7 @@ nav {
     font-size: 1.2rem;
 }
 
-.why-container p strong{
+.why-container p strong {
     color: #1C1C1C;
 }
 
@@ -333,15 +338,15 @@ nav {
     background-color: saddlebrown;
 }
 
-.why-cover{
+.why-cover {
     margin: 30px auto;
     display: flex;
     /* justify-content: center; */
 }
 
-.why-box{
+.why-box {
     width: 300px;
-    height: 200px    ;
+    height: 200px;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
@@ -351,9 +356,8 @@ nav {
     margin: 0 15px;
 }
 
-.why-box p{
+.why-box p {
     white-space: normal;
     margin-top: 20px;
     color: var(--text-cl);
 }
-

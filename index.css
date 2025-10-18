@@ -361,3 +361,33 @@ nav {
     margin-top: 20px;
     color: var(--text-cl);
 }
+
+
+/* --- customer reivew --- */
+.customer-reviwe{
+    width: 100%;
+    height: auto;
+    background-color: salmon;
+}
+
+/* --- swiper silder css */
+ .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }

@@ -6,22 +6,32 @@ let index = 0;
 let boxWidth = serviceBox[0].offsetWidth - 40; // 30 is the gap in px
 console.log(boxWidth);
 
-function rightbtn(){
-    index++        
-    if(index >= serviceBox.length){
+function rightbtn() {
+    index++
+    if (index >= serviceBox.length) {
         index = 0;
     }
     updateServiceBox()
 }
 
-function leftbtn(){
+function leftbtn() {
     index--
-    if(index < 0){
+    if (index < 0) {
         index = serviceBox.length - 1;
-    }   
+    }
     updateServiceBox()
 }
 
-function updateServiceBox(){
+function updateServiceBox() {
     serviceCover.style.transform = `translateX(${-index * boxWidth}px)`;
 }
+
+// swiper silder
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});

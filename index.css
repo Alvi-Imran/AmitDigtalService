@@ -6,6 +6,7 @@
 
 :root {
     --bg: #1C1C1C;
+    --bg-color:#fae8d2;
     --PrimaryText: #F5E8D8;
     --Accent1: #FF6F61;
     --Accent2: #DAA520;
@@ -22,7 +23,7 @@ body {
 
 body {
     /* background-color: #001721 */
-    background-color: var(--PrimaryText);
+    background-color: var(--bg-color);
     font-family: "Montserrat", sans-serif;
 
 }
@@ -31,6 +32,7 @@ nav {
     width: 100%;
     height: 50px;
     /* background-color: #e4e9ead8; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -47,7 +49,6 @@ nav {
 
 #logo span {
     color: #f90f0f;
-    /* color: var(--Accent1); */
 }
 
 .nav-links ul {
@@ -99,28 +100,40 @@ nav {
 .section {
     width: 100%;
     height: 100vh;
-    /* border: 1px solid white; */
 }
 
 /* -- hero section -- */
 .section:nth-child(2) {
-    /* background-color: #f4f4f4; */
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 10px;
 }
 
-.section:nth-child(2) h1 {
+.section:nth-child(2) svg{
+    width: 400px;
+    height: 400px;
+}
+
+.hero-cover {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+}
+
+.hero-cover h1 {
     color: var(--Accent1);
 }
 
-.section:nth-child(2) p {
+.hero-cover p {
     color: #525151
 }
 
-.section:nth-child(2) button {
+.hero-cover button {
     width: 110px;
     margin-top: 20px;
     height: 35px;
@@ -140,9 +153,8 @@ nav {
 
 /* -- About-Us --- */
 .section:nth-child(3) {
-    background-color: #fae8d2;
+    /* background-color: #fae8d2; */
     height: auto;
-    padding: 20px 0;
 }
 
 .about-us {
@@ -212,7 +224,7 @@ nav {
 
 /* -- service section -- */
 .section:nth-child(4) {
-    background-color: #fae8d2;
+    /* background-color: #fae8d2; */
     position: relative;
     height: auto;
 }
@@ -297,7 +309,7 @@ nav {
 
 /* -- why-section -- */
 .section:nth-child(5) {
-    background-color: #fae8d2;
+    /* background-color: #fae8d2; */
     height: auto;
     padding: 20px 0;
 }
@@ -469,7 +481,7 @@ nav {
 
 /* ---- contact section */
 .contact-us {
-    /* height: 100%; */
+    height: 100%;
     background-color: #333e70;
     padding: 20px 0;
 }
@@ -488,20 +500,20 @@ nav {
 
 .contact-cantainer {
     width: 100%;
-    height: calc(100% - 10vh);
+    height: 100%;
     padding: 0 30px;
     margin: 20px auto;
     display: flex;
-    gap: 20px;
+    gap: 15px;
     align-items: center;
     justify-content: space-evenly;
 }
 
 .contact-info,
 .contact-from {
-    width: 40%;
+    /* width: 40%; */
     height: 90%;
-    padding: 40px;
+    padding:0 20px;
     color: #fff;
     line-height: 4vh;
     display: flex;

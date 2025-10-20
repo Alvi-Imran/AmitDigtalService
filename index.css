@@ -469,41 +469,55 @@ nav {
 
 /* ---- contact section */
 .contact-us {
-    background-color: #b9c3f1;
-    /* flex-wrap: wrap;      */
+    /* height: 100%; */
+    background-color: #333e70;
+    padding: 20px 0;
+}
+
+.contact-us h2{
+    color: #F1F1F1;
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+.contact-us > p{
+    text-align: center;
+    color: #f1e5e5;
+    margin-top: 15px;
 }
 
 .contact-cantainer {
     width: 100%;
-    height: auto;
-    padding: 30px;
-    margin: auto;
+    height: calc(100% - 10vh);
+    padding: 0 30px;
+    margin: 20px auto;
     display: flex;
     gap: 20px;
     align-items: center;
     justify-content: space-evenly;
-    /* background-color: palegoldenrod; */
 }
 
 .contact-info,
 .contact-from {
     width: 40%;
-    height: 90vh;
+    height: 90%;
     padding: 40px;
     color: #fff;
-    /* border: 2px solid #fff; */
-    /* background-color: slateblue; */
     line-height: 4vh;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    /* align-items: center; */
+    gap: 15px;
+}
+
+.contact-info h3{
+    text-align: 3rem;
 }
 
 .social-links a{
     text-decoration: none;
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin:0 1rem;
 }
 
 .contact-from form {
@@ -528,6 +542,15 @@ nav {
     height: 35px;
     border-radius: 10px;
     border: none;
-    background-color: #FF6F61;
+    background-color: #89CFF0;
     cursor: pointer;
+}
+
+footer{
+    border-top: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    background-color: #333e70;
+    font-size: 0.8rem;
+    padding: 10px 0;
 }

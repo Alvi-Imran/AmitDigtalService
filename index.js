@@ -4,14 +4,12 @@ let serviceBox = document.querySelectorAll('.service-box');
 let index = 0;
 
 let boxWidth = serviceBox[0].offsetWidth - 40; // 30 is the gap in px
-console.log(boxWidth);
 
 function rightbtn() {
     index++
     if (index >= serviceBox.length) {
         index = 0;
     }
-    log("right "+boxWidth);
     updateServiceBox()
 }
 
@@ -19,9 +17,7 @@ function leftbtn() {
     index--
     if (index < 0) {
         index = serviceBox.length - 1;
-    }
-    console.log("left "+boxWidth);
-    
+    }    
     updateServiceBox()
 }
 
@@ -29,9 +25,7 @@ setInterval(()=>{
     rightbtn();
 },1500);
 
-function updateServiceBox() {
-    console.log(boxWidth);
-    
+function updateServiceBox() {    
     serviceCover.style.transform = `translateX(${-index * boxWidth}px)`;
 }
 
@@ -48,3 +42,34 @@ var swiper = new Swiper(".mySwiper", {
         clickable: true,
     },
 });
+
+
+
+// nav toggle animation
+let navToggle = document.querySelector('.menu-toggle');
+let navLi = document.querySelectorAll('.nav-links ul li');
+
+navToggle.addEventListener('click',()=>{
+    console.log("clicked")
+    let navshow = document.querySelector('.nav-links');
+    if(navshow.style.display === "none" || navshow.style.display === ""){
+        navshow.style.display = "flex";
+        navAnimation();
+    }else{
+        navshow.style.display = "none";
+        navLi.forEach((li,idx)=>{       
+            li.style.transform = `translateX(-100%)`; 
+            li.style.transition = `all 0.5s ease`;
+    });
+    }
+});
+
+function navAnimation() {
+    navLi.forEach((li,idx)=>{       
+        setTimeout(() => {
+            li.style.transform = `translateX(0px)`; 
+            li.style.transition = `all 0.5s ease`;
+        }, idx * 200);
+    });
+}
+// navAnimation();

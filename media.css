@@ -29,17 +29,25 @@
     .nav-links ul{
         flex-direction: column;
         gap: 20px;
+        overflow: hidden;
     }
 
     .nav-links ul li{
         position: relative;
+        transform: translateX(-100%);
     }
 
     .nav-drop-links{
+        width: 100%;
+        height: auto;
         position: relative;
         top:0;
-
+        overflow: visible;
+        box-shadow: none;
+        background-color: transparent;
     }
+
+ 
 
     .section{
         display: none;

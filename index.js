@@ -25,6 +25,10 @@ function leftbtn() {
     updateServiceBox()
 }
 
+setInterval(()=>{
+    rightbtn();
+},1500);
+
 function updateServiceBox() {
     console.log(boxWidth);
     

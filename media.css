@@ -3,3 +3,51 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@media (max-width:500px) {
+    nav{
+        width: 100%;
+        position: relative;
+        padding:0 20px;
+    }
+
+    #logo{
+        font-size: 1.2rem;
+    }
+
+    .menu-toggle{
+        display: block;
+    }
+
+    .nav-links{
+        display: none;
+        position: absolute;
+        top: 50px;
+        padding: 5% 0;
+    }
+
+    .nav-links ul{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links ul li{
+        position: relative;
+    }
+
+    .nav-drop-links{
+        position: relative;
+        top:0;
+
+    }
+
+    .section{
+        display: none;
+    }
+
+    .section:nth-child(2){
+        display: none;
+        flex-direction: column;
+    }
+
+}

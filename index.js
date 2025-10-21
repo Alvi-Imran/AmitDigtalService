@@ -11,6 +11,7 @@ function rightbtn() {
     if (index >= serviceBox.length) {
         index = 0;
     }
+    log("right "+boxWidth);
     updateServiceBox()
 }
 
@@ -19,14 +20,18 @@ function leftbtn() {
     if (index < 0) {
         index = serviceBox.length - 1;
     }
+    console.log("left "+boxWidth);
+    
     updateServiceBox()
 }
 
 function updateServiceBox() {
+    console.log(boxWidth);
+    
     serviceCover.style.transform = `translateX(${-index * boxWidth}px)`;
 }
 
-// swiper silder
+// swiper libaery for silder
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 30,

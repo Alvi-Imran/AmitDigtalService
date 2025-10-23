@@ -48,10 +48,6 @@
         background-color: transparent;
     }
 
-    .section {
-        /* display: none; */
-    }
-
     .section:nth-child(2) {
         width: 100%;
         flex-direction: column;

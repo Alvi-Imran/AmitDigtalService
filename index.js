@@ -4,7 +4,6 @@ let serviceBox = document.querySelectorAll('.service-box');
 let index = 0;
 
 let boxWidth = serviceBox[0].offsetWidth - 40; // 30 is the gap in px
-console.log(boxWidth);
 
 function rightbtn() {
     index++
@@ -18,7 +17,7 @@ function leftbtn() {
     index--
     if (index < 0) {
         index = serviceBox.length - 1;
-    }
+    }    
     updateServiceBox()
 }
 
@@ -26,11 +25,11 @@ setInterval(()=>{
     rightbtn();
 },1500);
 
-function updateServiceBox() {
+function updateServiceBox() {    
     serviceCover.style.transform = `translateX(${-index * boxWidth}px)`;
 }
 
-// swiper silder
+// swiper libaery for silder
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 30,
@@ -43,3 +42,34 @@ var swiper = new Swiper(".mySwiper", {
         clickable: true,
     },
 });
+
+
+
+// nav toggle animation
+let navToggle = document.querySelector('.menu-toggle');
+let navLi = document.querySelectorAll('.nav-links ul li');
+
+navToggle.addEventListener('click',()=>{
+    console.log("clicked")
+    let navshow = document.querySelector('.nav-links');
+    if(navshow.style.display === "none" || navshow.style.display === ""){
+        navshow.style.display = "flex";
+        navAnimation();
+    }else{
+        navshow.style.display = "none";
+        navLi.forEach((li,idx)=>{       
+            li.style.transform = `translateX(-100%)`; 
+            li.style.transition = `all 0.5s ease`;
+    });
+    }
+});
+
+function navAnimation() {
+    navLi.forEach((li,idx)=>{       
+        setTimeout(() => {
+            li.style.transform = `translateX(0px)`; 
+            li.style.transition = `all 0.5s ease`;
+        }, idx * 200);
+    });
+}
+// navAnimation();

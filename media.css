@@ -24,6 +24,7 @@
         position: absolute;
         top: 50px;
         padding: 5% 0;
+        background-color: #fae8d2;
     }
 
     .nav-links ul {
@@ -37,8 +38,6 @@
         transform: translateX(-100%);
     }
 
-
-
     .nav-drop-links {
         width: 100%;
         height: auto;
@@ -49,10 +48,8 @@
         background-color: transparent;
     }
 
-
-
     .section {
-        display: none;
+        /* display: none; */
     }
 
     .section:nth-child(2) {
@@ -77,4 +74,51 @@
     .hero-cover p {
         font-size: 0.9rem;
     }
+
+    .hero-cover button {
+        width: 100px;
+        margin-left: 30%;
+    }
+
+    .section:nth-child(3) {
+        display: block;
+
+    }
+
+    .about-us h1 {
+        font-size: 1.7rem;
+    }
+
+    .about-p-cover {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .about-cover {
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        padding: 5px 0;
+    }
+
+    .about-box p {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+
+    .service-content h2 {
+        font-size: 1.7rem;
+    }
+
+    .services-intro {
+        font-size: 0.9rem;
+    }
+
+    .service-btn button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contact-us {
+        display: none;
+    }
+
 }

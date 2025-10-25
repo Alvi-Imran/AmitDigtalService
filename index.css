@@ -172,7 +172,7 @@ nav {
     justify-content: center;
 }
 
-.about-us h1 {
+.about-us h2 {
     color: var(--Accent1);
     text-align: center;
     font-size: 2.4rem;
@@ -369,10 +369,10 @@ nav {
     transition: 0.3s;
     text-align: center;
     margin: 0 15px;
+    white-space: normal;
 }
 
 .why-box p {
-    white-space: normal;
     margin-top: 20px;
     color: var(--text-cl);
 }
@@ -514,7 +514,6 @@ nav {
 
 .contact-info,
 .contact-from {
-    /* width: 40%; */
     height: 90%;
     padding:0 20px;
     color: #fff;

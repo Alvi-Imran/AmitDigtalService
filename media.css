@@ -60,20 +60,11 @@
         background-color: transparent;
     }
 
-    .section:nth-child(2) {
-        width: 100%;
-    }
-
+/* hero section */
     .section:nth-child(2) {
         width: 100%;
         flex-direction: column;
         padding: 10px 0;
-    }
-
-    .hero-cover {
-        width: 90%;
-        margin: 0 auto;
-        padding: 10px;
     }
 
     .hero-cover H1 {
@@ -93,26 +84,24 @@
         width: 90%;
     }
 
-    .hero-cover h1 {
-        font-size: 1.5rem;
-    }
-
-    .hero-cover p {
-        font-size: 0.9rem;
-    }
-
     .hero-cover button {
         width: 100px;
         margin-left: 40%;
     }
 
+    .section-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .section-title p {
+        font-size: 0.9rem;
+    }
+
+
+    /* about-section */
     .section:nth-child(3) {
         display: block;
 
-    }
-
-    .about-us h1 {
-        font-size: 1.7rem;
     }
 
     .about-p-cover {
@@ -125,15 +114,7 @@
         padding: 5px 0;
     }
 
-    .about-box p {
-        font-size: 0.9rem;
-        line-height: 1.5rem;
-    }
-
-    .service-content h2 {
-        font-size: 1.7rem;
-    }
-
+    /* services section */
     .services-intro {
         font-size: 0.9rem;
     }
@@ -143,8 +124,36 @@
         height: 30px;
     }
 
+    /* why-section */
+    .why-box{
+        flex-shrink: 0;
+    }
+
+
+    .swiper{
+        padding: 20% 0;
+    }
+
+    .swiper-slide{
+        width: 250px;
+        height: 230px;
+    }
+    
+.testi-author{
+    /* transform: translateY(-100px); */
+    width: 100px;
+    height: 100px;
+
+}
+
+.customer-dital{
+    line-height: 5vh;
+}
+
     .contact-us {
         display: none;
     }
+
+
 
 }

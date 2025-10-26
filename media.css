@@ -60,7 +60,7 @@
         background-color: transparent;
     }
 
-/* hero section */
+    /* hero section */
     .section:nth-child(2) {
         width: 100%;
         flex-direction: column;
@@ -99,11 +99,6 @@
 
 
     /* about-section */
-    .section:nth-child(3) {
-        display: block;
-
-    }
-
     .about-p-cover {
         font-size: 1rem;
         line-height: 1.5rem;
@@ -125,35 +120,68 @@
     }
 
     /* why-section */
-    .why-box{
+    .why-box {
         flex-shrink: 0;
     }
 
+    /* customer rivew */
+    .customer-reviwe {
+        padding: 15px;
+    }
 
-    .swiper{
+    .customer-reviwe p {
+        padding: 10px 0;
+        line-height: 3vh;
+    }
+
+    .swiper {
         padding: 20% 0;
     }
 
-    .swiper-slide{
+    .swiper-slide {
         width: 250px;
         height: 230px;
     }
-    
-.testi-author{
-    /* transform: translateY(-100px); */
-    width: 100px;
-    height: 100px;
 
-}
-
-.customer-dital{
-    line-height: 5vh;
-}
-
-    .contact-us {
-        display: none;
+    .testi-author {
+        width: 100px;
+        height: 100px;
     }
 
+    .customer-dital {
+        line-height: 5vh;
+    }
+
+    /* end customer rivew */
 
 
+    .contact-us {
+        padding: 15px;
+    }
+
+    .contact-from{
+        margin-top: 20px;
+    }
+
+    .contact-from, .contact-info h3{
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .contact-cantainer {
+        flex-direction: column;
+    }
+
+    .contact-from form input,
+    .contact-from form textarea {
+        width: 80vw;
+    }
+
+    iframe{
+        width: 90vw;
+    }
+
+    footer{
+        padding: 20px 0;
+    }
 }

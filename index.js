@@ -47,11 +47,11 @@ var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
         },
         // When screen width is >= 640px (Tablet)
-        640: {
+        426: {
             slidesPerView: 2,
         },
         // When screen width is >= 1024px (Laptop/Desktop)
-        1024: {
+        769: {
             slidesPerView: 3,
         },
         // When screen width is >= 1440px (Large screen)

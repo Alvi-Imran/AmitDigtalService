@@ -125,7 +125,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .hero-cover h1 {
@@ -156,7 +156,6 @@ nav {
 
 /* -- About-Us --- */
 .section:nth-child(3) {
-    /* background-color: #fae8d2; */
     height: auto;
 }
 
